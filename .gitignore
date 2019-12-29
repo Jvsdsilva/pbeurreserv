@@ -106,5 +106,5 @@ settings.py
 # mypy
 .mypy_cache/
 
-pbeurre/settings/production.py
-pbeurre/staticfiles
+pbeurreserv/settings/production.py
+pbeurreserv/staticfiles

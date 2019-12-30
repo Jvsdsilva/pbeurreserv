@@ -5,7 +5,6 @@ from aliments.models import Products
 from django.urls import reverse
 from django.contrib.auth.models import User
 from .forms import RegistrationForm
-from django.test import Client
 
 
 # models test
@@ -77,15 +76,3 @@ class CommentFormTest(TestCase):
 
         self.assertEqual(obj_user['username'], "Joana Silva")
         self.assertEqual(obj_user['email'], "joana@example.com")
-
-
-class connection(TestCase):
-
-    def test_connection(self):
-
-        c = Client()
-        response = c.post('/login/', {'username': 'joana', 'password': 'joana15612'})
-        self.assertEquals(response.status_code)
-
-        """response = c.get('/customer/details/')
-        self.assertEquals(response.content)"""

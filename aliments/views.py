@@ -6,6 +6,7 @@ from .forms import RegistrationForm
 from django import forms
 from django.http import HttpResponse
 from django.template import loader
+from aliments.models import Products
 from aliments.models import Foodsave
 from aliments import dbInsert
 from aliments import dbRequests
@@ -14,10 +15,6 @@ from django.db import transaction
 from aliments.models import Category
 from aliments.models import Store
 from aliments.models import Products
-from django.contrib import messages
-from django.contrib.auth import update_session_auth_hash
-from django.contrib.auth.forms import PasswordChangeForm
-from django.shortcuts import render, redirect
 
 
 # go to home

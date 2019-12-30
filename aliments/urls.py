@@ -1,12 +1,11 @@
 from django.conf.urls import url
 from .import views  # import views so we can use them in urls.
 from django.contrib.auth.views import LoginView, LogoutView
-from django.conf.urls import url
 
 urlpatterns = [
     url(r'^$', views.index),
     url(r'^index', views.index, name="index"),
-    url(r'^login/$', LoginView.as_view(template_name='aliments/login.html'), name='login'),
+    url(r'^login/$', LoginView.as_view(template_name='aliments/user.html'), name='login'),
     url(r'^results/$', views.results, name="results"),
     url(r'^results_details/(?P<pk>\d+)/$', views.results_details, name="results_details"),
     url(r'^aliment/', views.aliment, name="aliment"),

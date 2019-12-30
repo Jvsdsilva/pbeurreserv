@@ -1,6 +1,5 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-__init__.py
 *.py[cod]
 *$py.class
 .pytest_cache
@@ -91,7 +90,7 @@ ENV/
 env.bak/
 venv.bak/
 .vscode
-settings.py
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -99,12 +98,19 @@ settings.py
 # Rope project settings
 .ropeproject
 
-
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
 
-pbeurreserv/settings/production.py
-pbeurreserv/staticfiles
+pbeurre/settings/production.py
+pbeurre/staticfiles
+pbeurre/__pycache__/
+pbeurreserv/pbeurre/__pycache__/
+pbeurre/aliments/__pycache__/
+pbeurre/aliments/migrations/__pycache__
+pbeurre/.gitignore
+pbeurreserv/pbeurre/settings/production.py
+pbeurreserv/pbeurre/settings/__pycache__/
+pbeurreserv/pbeurre/staticfiles/

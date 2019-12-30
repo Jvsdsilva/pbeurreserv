@@ -108,9 +108,9 @@ pbeurre/settings/production.py
 pbeurre/staticfiles
 pbeurre/__pycache__/
 pbeurreserv/pbeurre/__pycache__/
-pbeurre/aliments/__pycache__/
-pbeurre/aliments/migrations/__pycache__
-pbeurre/.gitignore
+pbeurreserv/aliments/__pycache__/
+pbeurreserv/aliments/migrations/__pycache__
+pbeurreserv/.gitignore
 pbeurreserv/pbeurre/settings/production.py
 pbeurreserv/pbeurre/settings/__pycache__/
 pbeurreserv/pbeurre/staticfiles/

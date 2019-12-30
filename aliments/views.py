@@ -6,7 +6,6 @@ from .forms import RegistrationForm
 from django import forms
 from django.http import HttpResponse
 from django.template import loader
-from aliments.models import Products
 from aliments.models import Foodsave
 from aliments import dbInsert
 from aliments import dbRequests

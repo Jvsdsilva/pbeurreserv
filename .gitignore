@@ -103,3 +103,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+pbeurre/settings/production.py
+__pycache__
+pbeurre/staticfiles/

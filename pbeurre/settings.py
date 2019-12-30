@@ -58,7 +58,7 @@ MIDDLEWARE = [
 
 INTERNAL_IPS = ['127.0.0.1']
 
-ROOT_URLCONF = 'pbeurre.urls'
+ROOT_URLCONF = 'pbeurreserv/pbeurre.urls'
 
 TEMPLATES = [
     {
@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pbeurre.wsgi.application'
+WSGI_APPLICATION = 'pbeurreserv/pbeurre.wsgi.application'
 
 
 # Database

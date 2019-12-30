@@ -107,3 +107,12 @@ venv.bak/
 pbeurre/settings/production.py
 __pycache__
 pbeurre/staticfiles/
+
+pbeurreserv/__pycache__/
+pbeurreserv/pbeurre/__pycache__/
+pbeurreserv/aliments/__pycache__/
+pbeurreserv/aliments/migrations/__pycache__
+pbeurreserv/.gitignore
+pbeurreserv/pbeurre/settings/production.py
+pbeurreserv/pbeurre/settings/__pycache__/
+pbeurreserv/staticfiles/

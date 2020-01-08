@@ -135,7 +135,8 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [
-    '127.0.0.1'
+    '127.0.0.1',
+    '159.65.238.2'
     ]
 
 if os.environ.get('ENV') == 'PRODUCTION':

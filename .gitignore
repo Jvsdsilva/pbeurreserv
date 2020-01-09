@@ -131,3 +131,6 @@ env/
 pbeurre/__pycache__
 aliments/__pycache__/
 aliments/migrations/__pycache__/
+pbeurre/settings/production.py
+__pycache__
+pbeurre/staticfiles/

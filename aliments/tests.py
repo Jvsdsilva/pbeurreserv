@@ -69,10 +69,10 @@ class CategoryTest(TestCase):
 class CommentFormTest(TestCase):
 
     def test_valid_data(self):
-        obj_user = RegistrationForm({"Joana Silva",
+        obj_user = RegistrationForm({"Joana",
                                      "joana@example.com",
                                      "password1",
                                      "password2"})
 
-        self.assertEqual(obj_user['username'], "Joana Silva")
+        self.assertEqual(obj_user['username'], "Joana")
         self.assertEqual(obj_user['email'], "joana@example.com")

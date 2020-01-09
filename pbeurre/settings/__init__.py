@@ -29,7 +29,7 @@ SECRET_KEY = "h=kv-xw_96)z(t#t++l#y+%am8+&!91=t(lj=*y3ow*f3sosn3"
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition

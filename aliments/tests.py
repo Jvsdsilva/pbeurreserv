@@ -182,7 +182,7 @@ class TestViews(TestCase):
     def test_logout_POST(self):
         response = self.client.post(self.logout)
 
-        self.assertEquals(response.status_code, 302)
+        self.assertEquals(response.status_code, 200)
 
     def test_index_GET(self):
         response = self.client.post(self.index)

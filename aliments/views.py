@@ -76,11 +76,24 @@ def signup(request):
 # request results
 def results(request):
     result_res = []
-    search = request.POST.get('searchbtn', None)
-    query_index = request.POST['query_index']
-    query_nav = request.POST['query_nav']
+    query_index = ""
+    query = ""
+    query_nav = ""
 
-    if search == 'searchbtn':
+    if request.method == "POST":
+        search = request.POST.get('searchbtn')
+        if search is None:
+            query_nav = request.POST['query_nav']
+
+            if query_nav != "":
+                query_nav = query_nav
+            else:
+                query_nav = ""
+    
+    if search == 'searchbtn' or query_nav != "":
+        if search == 'searchbtn':
+            query_index = request.POST['query_index']
+
         if query_index != "" or query_nav != "":
             if query_index != "":
                 query = query_index
@@ -105,9 +118,9 @@ def results(request):
                 contexts['nutritionGrade'] = result.nutritionGrade
 
                 result_res.append(contexts)
-            # print(result_res)
+
             return render(request, 'aliments/results.html',
-                        {'results': result_res})
+                         {'results': result_res})
 
 
 # redirect to page details for a specific product
